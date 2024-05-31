@@ -1,0 +1,38 @@
+.home {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../css/images/hero-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+
+  > .container {
+    min-height: 80vh;
+  }
+  h1 {
+    --animate-duration: 10s;
+  }
+}
+.main {
+  background-color: rgb(231, 231, 231);
+  .error {
+    color: red;
+    font-size: 14px;
+
+    &::before {
+      content: "* ";
+    }
+  }
+  .inner {
+    p {
+      overflow-wrap: anywhere;
+    }
+    .card-img {
+      img {
+        height: 250px;
+        object-fit: cover;
+      }
+    }
+  }
+}
